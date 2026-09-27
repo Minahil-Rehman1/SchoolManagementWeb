@@ -1,0 +1,198 @@
+﻿@{
+    ViewData["Title"] = "School Management System";
+}
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f8f5f0;
+        font-family: "Segoe UI", sans-serif;
+        color: #3f3934;
+    }
+
+    .dashboard {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 25px;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #eee4d8, #f8f2eb);
+        border-radius: 28px;
+        padding: 55px 50px;
+        margin-bottom: 35px;
+        box-shadow: 0 10px 30px rgba(90, 70, 50, 0.08);
+    }
+
+    .hero h1 {
+        margin: 0 0 12px;
+        font-family: Georgia, serif;
+        font-size: 44px;
+        font-weight: 600;
+        color: #4a4038;
+    }
+
+    .hero p {
+        margin: 0;
+        font-size: 17px;
+        color: #766b62;
+        max-width: 650px;
+        line-height: 1.7;
+    }
+
+    .section-title {
+        font-family: Georgia, serif;
+        font-size: 28px;
+        color: #4a4038;
+        margin: 0 0 20px;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+
+    .menu-card {
+        text-decoration: none;
+        color: inherit;
+        background: #fffdf9;
+        border: 1px solid #e9dfd4;
+        border-radius: 22px;
+        padding: 30px;
+        min-height: 190px;
+        transition: all 0.25s ease;
+        box-shadow: 0 7px 22px rgba(90, 70, 50, 0.06);
+    }
+
+    .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 30px rgba(90, 70, 50, 0.12);
+        border-color: #d8c5b3;
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eee4d8;
+        border-radius: 16px;
+        font-size: 27px;
+        margin-bottom: 18px;
+    }
+
+    .menu-card h3 {
+        margin: 0 0 8px;
+        font-family: Georgia, serif;
+        font-size: 23px;
+        color: #4a4038;
+    }
+
+    .menu-card p {
+        margin: 0;
+        color: #81766d;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin-top: 40px;
+        color: #9a8e84;
+        font-size: 14px;
+    }
+
+    @@media (max-width: 700px) {
+        .dashboard {
+            padding: 25px 15px;
+        }
+
+        .hero {
+            padding: 35px 25px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+        }
+
+        .menu-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<div class="dashboard">
+
+    <div class="hero">
+        <h1>School Management System</h1>
+
+        <p>
+            Manage students, teachers, classes and assessments
+            through one simple and organized web application.
+        </p>
+    </div>
+
+    <h2 class="section-title">Management Menu</h2>
+
+    <div class="menu-grid">
+
+        <a href="/Management?section=Students" class="menu-card">
+            <div class="icon">🎓</div>
+
+            <h3>Students</h3>
+
+            <p>
+                Add, view, search, update and manage
+                student records.
+            </p>
+        </a>
+
+
+        <a href="/Management?section=Teachers" class="menu-card">
+            <div class="icon">👩‍🏫</div>
+
+            <h3>Teachers</h3>
+
+            <p>
+                Manage teacher information, subjects
+                and teacher records.
+            </p>
+        </a>
+
+
+        <a href="/Management?section=Classes" class="menu-card">
+            <div class="icon">🏫</div>
+
+            <h3>Classes</h3>
+
+            <p>
+                Create, view and manage classes with
+                their assigned teachers.
+            </p>
+        </a>
+
+
+        <a href="/Management?section=Assessments" class="menu-card">
+            <div class="icon">📝</div>
+
+            <h3>Assessments</h3>
+
+            <p>
+                Manage student assessments, marks,
+                dates and results.
+            </p>
+        </a>
+
+    </div>
+
+    <div class="footer-text">
+        School Management Web Application
+    </div>
+
+</div>

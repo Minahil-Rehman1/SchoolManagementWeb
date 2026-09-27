@@ -1,0 +1,2 @@
+@model dynamic
+<form method="post" action="/Management/Delete" class="d-inline" onsubmit="return confirm('Delete this record?');">@Html.AntiForgeryToken()<input type="hidden" name="section" value="@Model.section"/><input type="hidden" name="id" value="@Model.id"/><button class="btn btn-sm btn-outline-danger">Delete</button></form>

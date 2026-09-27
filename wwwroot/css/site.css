@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+body {
+    background: #f8f4ef;
+}
+
+.management-theme {
+    color: #5d5147;
+}
+
+.management-theme h2,
+.management-theme label {
+    color: #6f5848;
+}
+
+.management-theme .card {
+    background: #fffdfa;
+    border-radius: 18px;
+}
+
+.management-theme .card-header,
+.management-theme .table thead th {
+    background: #f1ebe5;
+    color: #5d5147;
+    border-color: #e5dbd1;
+}
+
+.management-theme .table {
+    --bs-table-bg: #fffdfa;
+    --bs-table-hover-bg: #f3ece5;
+    color: #5d5147;
+}
+
+.management-theme .form-control,
+.management-theme .form-select {
+    background: #fffdfa;
+    border-color: #ddd2c8;
+    color: #5d5147;
+    border-radius: 10px;
+}
+
+.management-theme .form-control:focus,
+.management-theme .form-select:focus {
+    border-color: #c8b7a6;
+    box-shadow: 0 0 0 .15rem rgba(200,183,166,.3);
+}
+
+.management-theme .btn-primary,
+.management-theme .btn-success,
+.management-theme .btn-secondary {
+    background: #a99582;
+    border-color: #a99582;
+    color: white;
+}
+
+.management-theme .btn-primary:hover,
+.management-theme .btn-success:hover,
+.management-theme .btn-secondary:hover {
+    background: #8e7662;
+    border-color: #8e7662;
+}
+
+.management-theme .btn-outline-primary,
+.management-theme .btn-outline-secondary {
+    border-color: #b9a18d;
+    color: #6f5848;
+    background: #fffdfa;
+}
+
+.management-theme .btn-outline-primary:hover,
+.management-theme .btn-outline-secondary:hover {
+    background: #e9ddd2;
+    border-color: #b9a18d;
+    color: #5d5147;
+}
+
+.management-theme .btn-light {
+    background: #eee7df;
+    border-color: #ded2c6;
+    color: #5d5147;
+}
